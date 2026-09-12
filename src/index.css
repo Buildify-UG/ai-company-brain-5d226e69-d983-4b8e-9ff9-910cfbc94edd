@@ -134,7 +134,18 @@
   }
 
   body {
-    @apply text-foreground;
-    background: linear-gradient(160deg, rgb(20, 36, 80) 0%, rgba(18, 18, 18, 1) 30%, rgba(18, 18, 18, 1) 72%, rgb(46, 15, 40) 100%);
+    @apply text-foreground bg-background;
+  }
+
+  :root {
+    --primary-indigo: 79 46 229;
+    --primary-indigo-light: 99 102 241;
+  }
+
+  .light {
+    --primary: 79 46 229;
+    --primary-foreground: 210 40% 98%;
+    --accent: 79 46 229;
+    --accent-foreground: 210 40% 98%;
   }
 }
